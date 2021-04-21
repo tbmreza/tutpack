@@ -1,0 +1,37 @@
+{
+  "name": "@tbmreza/tutpack",
+  "version": "1.0.0",
+  "description": "JavaScript module bundler from a tutorial.",
+  "main": "tutpack.js",
+  "scripts": {
+    "test": "node src/tutpack.js > assets/example-bundle.js && node assets/example-bundle.js"
+  },
+  "author": "Reza Handzalah",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-traverse": "^6.26.0",
+    "babylon": "^6.18.0",
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "prettier": "^1.10.2"
+  },
+  "directories": {
+    "example": "example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tbmreza/tutpack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tbmreza/tutpack/issues"
+  },
+  "homepage": "https://github.com/tbmreza/tutpack#readme"
+}
