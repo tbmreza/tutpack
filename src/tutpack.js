@@ -28,7 +28,7 @@
 
 const fs = require("fs");
 const path = require("path");
-const babylon = require("babylon");
+const babelParser = require("@babel/parser");
 const traverse = require("babel-traverse").default;
 const { transformFromAst } = require("babel-core");
 
@@ -52,7 +52,7 @@ function createAsset(filename) {
   //
   // The AST contains a lot of information about our code. We can query it to
   // understand what our code is trying to do.
-  const ast = babylon.parse(content, {
+  const ast = babelParser.parse(content, {
     sourceType: "module",
   });
 
